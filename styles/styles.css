@@ -42,22 +42,17 @@ input {
 }
 
 #username:focus,
-#password:focus {
+#password:focus,
+#firstname:focus,
+#lastname:focus {
     outline: none;
     border-color: #0a66c2;
 }
 
-.username-label {
-    position: relative;
-    left: 2%;
-    top: -2.4em;
-    color: #adadad;
-    cursor: text;
-    margin: 0;
-    padding: 0;
-}
-
-.password-label {
+.username-label,
+.password-label,
+.firstname-label,
+.lastname-label {
     position: relative;
     left: 2%;
     top: -2.4em;
@@ -68,14 +63,13 @@ input {
 }
 
 #username:focus~.username-label,
-#username:not(:placeholder-shown)#username:not(:focus)~.username-label {
-    top: -3.5rem;
-    color: black;
-    background-color: white;
-}
-
+#username:not(:placeholder-shown)#username:not(:focus)~.username-label,
 #password:focus~.password-label,
-#password:not(:placeholder-shown)#password:not(:focus)~.password-label {
+#password:not(:placeholder-shown)#password:not(:focus)~.password-label,
+#firstname:focus~.firstname-label,
+#firstname:not(:placeholder-shown)#firstname:not(:focus)~.firstname-label,
+#lastname:focus~.lastname-label,
+#lastname:not(:placeholder-shown)#lastname:not(:focus)~.lastname-label {
     top: -3.5rem;
     color: black;
     background-color: white;
@@ -164,4 +158,10 @@ input {
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+#termandconditions {
+    width: 20px;
+    margin: 0;
+    height: 15px;
 }

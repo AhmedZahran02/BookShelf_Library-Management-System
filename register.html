@@ -22,13 +22,21 @@
     <main>
         <div class="card-layout">
             <div class="header_content ">
-                <h1 class="header_h">Sign in</h1>
+                <h1 class="header_h">Sign up</h1>
                 <p class="header_subh">Stay updated on most recent famous books</p>
             </div>
             <form action="" method="post">
-                <div class="signin">
+                <div class="signup">
+                    <div class="firstname-div">
+                        <input id="firstname" name="firstname" placeholder=" " type="text" required autofocus>
+                        <label class="firstname-label" for="firstname" aria-hidden="true">First Name</label>
+                    </div>
+                    <div class="lastname-div">
+                        <input id="lastname" name="lastname" placeholder=" " type="text" required>
+                        <label class="lastname-label" for="lastname" aria-hidden="true">Last Name</label>
+                    </div>
                     <div class="username-div">
-                        <input id="username" name="username" placeholder=" " type="text" required autofocus>
+                        <input id="username" name="username" placeholder=" " type="text" required>
                         <label class="username-label" for="username" aria-hidden="true">Email or Phone</label>
                     </div>
                     <div class="password-div">
@@ -36,9 +44,12 @@
                         <label class="password-label" for="Password">Password</label>
                     </div>
                     <div>
-                        <a class="forgotpassword" href="#">Forgot password?</a>
+                        <input type="checkbox" id="termandconditions" name="termandconditions"
+                            value="termandconditions">
+                        <label class="terms-label" for="termandconditions">I accept the <a class="forgotpassword"
+                                href="#">Terms and Conditions</a></label>
                     </div>
-                    <input class="submit" type="submit" value="Sign in">
+                    <input class="submit" type="submit" value="Sign up">
                 </div>
             </form>
             <hr color="gray" size="0px">
@@ -49,7 +60,7 @@
                 </div>
                 <hr>
                 <div>
-                    <p>Don't have an account? <a class="forgotpassword" href="register.html">Register</a></p>
+                    <p>Already have an account? <a class="forgotpassword" href="index.html">Sign in</a></p>
                 </div>
             </div>
         </div>
