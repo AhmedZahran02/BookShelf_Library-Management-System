@@ -47,6 +47,7 @@ input {
 #lastname:focus {
     outline: none;
     border-color: #0a66c2;
+    transition: 0.5s;
 }
 
 .username-label,
@@ -74,6 +75,7 @@ input {
     color: black;
     background-color: white;
     border-radius: 10px;
+    transition: 0.5s;
 }
 
 .forgotpassword {
