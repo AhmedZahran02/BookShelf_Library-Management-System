@@ -119,14 +119,14 @@ video {
 }
 
 h1 {
-	font-size: 4rem;
+	font-size: 2rem;
 	line-height: 1.2;
 	font-weight: 400;
 	color: rgba(0, 0, 0, 0.9);
 }
 
 body {
-	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 p {
