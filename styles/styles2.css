@@ -1,5 +1,6 @@
-.logo {
-    margin: 32px;
+.logo-name,
+.logo-name2 {
+    border-radius: 18px;
 }
 
 body {
@@ -9,20 +10,14 @@ body {
     min-height: 100vh;
 }
 
-.footer {
-    margin-top: 0;
-    font-size: 18px;
+#footer {
+    font-size: 16px;
     background-color: #0073b1;
-    height: 23.6px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    align-self: flex-end;
-    width: 100%;
 }
 
 .logofooter img {
     height: 23.6px;
+    border-radius: 10px;
 }
 
 main {
@@ -59,7 +54,7 @@ main {
     font-weight: 600;
     font-family: inherit;
     padding: 0 30px;
-    margin: 10px 10px;
+    margin: 5px 10px;
     margin-right: 0;
     margin-bottom: 0;
     height: 30px;

@@ -1,5 +1,5 @@
 ﻿.logo {
-    margin: 32px;
+    margin: 25px;
     margin-bottom: 16px;
 }
 
@@ -22,8 +22,10 @@ main {
     -webkit-box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
     box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
     padding: 24px;
+    padding-bottom: 0.5px;
     border-radius: 8px;
     margin: 0 auto;
+    margin-bottom: 15px;
     background: white;
     font-size: 100%;
     vertical-align: baseline;
@@ -171,15 +173,14 @@ input {
     background-color: rgb(104, 103, 103);
 }
 
-.footer {
-    margin-top: 40px;
-    font-size: 18px;
+#footer {
+    font-size: 16px;
     background-color: #0073b1;
-    height: 25.8px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+}
+
+.logofooter img {
+    height: 23.6px;
+    border-radius: 10px;
 }
 
 #termandconditions {
