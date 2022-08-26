@@ -14,7 +14,7 @@ main {
     min-height: 518px;
     justify-content: center;
     margin: auto;
-    background-color: #ffffff;
+    background-color: inherit;
 }
 
 .card-layout {
@@ -186,4 +186,20 @@ input {
     width: 20px;
     margin: 0;
     height: 15px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #60a9ff;
+    }
+
+    .logo-name {
+        display: none;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .logo-name2 {
+        display: none;
+    }
 }

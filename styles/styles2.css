@@ -27,7 +27,7 @@ body {
 
 main {
     margin: auto;
-    background-color: #ffffff;
+    background-color: inherit;
     margin-bottom: 23.6px;
 }
 
@@ -76,4 +76,20 @@ main {
 .navbar a {
     text-decoration: none;
     color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #60a9ff;
+    }
+
+    .logo-name {
+        display: none;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .logo-name2 {
+        display: none;
+    }
 }
