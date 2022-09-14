@@ -96,3 +96,14 @@ main {
 .bg-dark {
     background-color: #1D2F6F !important;
 }
+
+#addbtn {
+    width: 50px;
+    position: absolute;
+    right: 10px;
+    bottom: 70px;
+}
+
+body {
+    position: relative;
+}
