@@ -17,11 +17,12 @@
     <link rel="stylesheet" href="styles/reset.css" />
     <link href="styles/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
     <header class="logo">
-        <a href="main.html">
+        <a href="index.php">
             <img class="logo-name" src="images/logo.png" alt="logo" width="200px">
             <img class="logo-name2" src="images/bluelogo.png" alt="logo" width="200px">
         </a>
@@ -29,10 +30,17 @@
     <main>
         <div class="card-layout">
             <div class="header_content ">
+
+                <?php
+                if (isset($_GET["value"]) && $_GET["value"] == 1) {
+                    echo ("<h3> Account Created</h3>");
+                }
+                ?>
+
                 <h1 class="header_h">Sign up</h1>
                 <p class="header_subh">Stay updated on most recent famous books</p>
             </div>
-            <form action="" method="post">
+            <form action="signupdb.php" method="post">
                 <div class="signup">
                     <div class="firstname-div">
                         <input id="firstname" name="firstname" placeholder=" " type="text" required autofocus>
@@ -43,18 +51,18 @@
                         <label class="lastname-label" for="lastname" aria-hidden="true">Last Name</label>
                     </div>
                     <div class="username-div">
-                        <input id="username" name="username" placeholder=" " type="text" required>
-                        <label class="username-label" for="username" aria-hidden="true">Email or Phone</label>
+                        <input id="username" name="username" placeholder=" " type="email" required>
+                        <label class="username-label" for="username" aria-hidden="true">Email address</label>
                     </div>
                     <div class="password-div">
-                        <input id="password" name="password" placeholder=" " type="password" required>
+                        <input id="password" name="password" placeholder=" " type="password" minlength="8" required>
                         <label class="password-label" for="Password">Password</label>
                     </div>
                     <div>
                         <input class="form-check-input" type="checkbox" id="termandconditions" name="termandconditions"
                             value="termandconditions" required>
                         <label class="form-check-label" for="termandconditions">I accept the <a class="forgotpassword"
-                                href="termsandconditions.html">Terms and Conditions</a></label>
+                                href="termsandconditions.php">Terms and Conditions</a></label>
                     </div>
                     <input class="submit" type="submit" value="Sign up">
                 </div>
@@ -63,23 +71,26 @@
             <div class="alternate-options">
                 <div class="or-text">or</div>
                 <div>
-                    <button class="reader"><a href="main.html">Enter as a reader</a></button>
+                    <button class="reader"><a href="index.php">Enter as a reader</a></button>
                 </div>
                 <hr>
                 <div>
-                    <p>Already have an account? <a class="forgotpassword" href="index.html">Sign in</a></p>
+                    <p>Already have an account? <a class="forgotpassword" href="signin.php">Sign in</a></p>
                 </div>
             </div>
         </div>
         <br><br>
     </main>
     <footer class="text-center p-3" id="footer">
-        <a class="logofooter" href="main.html" style="height: 23.6px;">
+        <a class="logofooter" href="index.php" style="height: 23.6px;">
             <img class="logo-name" src="images/logo.png" alt="logo" width="120px">
             <img class="logo-name2" src="images/bluelogo.png" alt="logo" width="120px">
         </a>
         &copy 2022,Bookshelf
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
