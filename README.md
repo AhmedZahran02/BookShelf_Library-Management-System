@@ -10,9 +10,10 @@ Allows libririan to :&nbsp;
 -Edit book details &nbsp;
 -Delete a book &nbsp;
 -Sign up & Sign in & Logout &nbsp;
--in adition to all features user hav &nbsp;
+-in adition to all features user have
 
-https://user-images.githubusercontent.com/87142232/190829040-116f9414-5daa-4748-a26f-a1bf7ba68b5f.mp4 &nbsp;
+https://user-images.githubusercontent.com/87142232/190829040-116f9414-5daa-4748-a26f-a1bf7ba68b5f.mp4 
+
 
 
 You can visit the website at http://bookshelf.lovestoblog.com/
