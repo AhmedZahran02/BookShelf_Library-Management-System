@@ -6,7 +6,7 @@ allow users to: <br>
 -Search for latest books in server <br>
 -View details of books <br>
 ----
-Allows libririan to : <br>
+Allows librarian to : <br>
 -Add books <br>
 -Edit book details <br>
 -Delete a book <br>
